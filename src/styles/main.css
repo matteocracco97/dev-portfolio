@@ -2,7 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* I tuoi stili personalizzati */
 :root {
     --accent: #3b82f6;
     --bg: #020617;
@@ -57,12 +56,10 @@ h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
     box-shadow: 0 0 15px var(--accent);
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: #020617; }
 ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
 
-/* Animazioni */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
