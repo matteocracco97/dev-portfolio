@@ -1,7 +1,7 @@
 # Matteo Cracco - Portfolio
 
 ## 🚀 Live Demo
-[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=CloudflarePages&logoColor=white)](https://matteocracco.pages.dev)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=CloudflarePages&logoColor=white)](https://dev-portafolio.pages.dev)
 
 Modern portfolio website built with Vite, Three.js, Vanta.js, and GSAP.
 
