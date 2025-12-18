@@ -24,7 +24,6 @@ async function loadVanta() {
         
         const canvas = document.getElementById('vanta-canvas');
         if (!canvas) {
-            console.warn('Elemento #vanta-canvas non trovato');
             return null;
         }
 
@@ -88,9 +87,8 @@ function initSkillsChart() {
                 plugins: { legend: { display: false } }
             }
         });
-        console.log('Chart.js inizializzato');
     } catch (error) {
-        console.error('Errore Chart.js:', error);
+        console.error('Chart.js init error:', error);
     }
 }
 
@@ -160,7 +158,6 @@ async function initApp() {
 window.addEventListener('beforeunload', () => {
     if (vantaEffect && typeof vantaEffect.destroy === 'function') {
         vantaEffect.destroy();
-        console.log('Vanta cleanup eseguito');
     }
 });
 
