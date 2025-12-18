@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Cracco | R&D Manager & DevOps Architect</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@300;600;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <div id="vanta-canvas"></div>
+
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass px-6 py-3">
+            <div class="text-2xl font-black tracking-tighter">MC<span class="text-blue-500">.</span></div>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
+                <a href="#about" class="hover:text-blue-400 transition">Strategy</a>
+                <a href="#devops" class="hover:text-blue-400 transition">DevOps</a>
+                <a href="#experience" class="hover:text-blue-400 transition">Journey</a>
+                <a href="#certs" class="hover:text-blue-400 transition">Certs</a>
+            </div>
+            <a href="mailto:matteocracco97@gmail.com" class="neo-btn bg-blue-600 px-6 py-2 rounded-xl text-xs font-bold uppercase">Contact</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+        <div class="inline-block px-4 py-1 glass border border-blue-500/30 text-blue-400 text-xs font-bold mb-6 rounded-full uppercase tracking-widest animate-bounce">
+            Available for R&D & DevOps Leadership
+        </div>
+        <h1 class="text-6xl md:text-9xl font-black mb-4 tracking-tighter">
+            MATTEO <br> <span class="text-gradient">CRACCO</span>
+        </h1>
+        <h2 class="text-2xl md:text-4xl font-light text-slate-400 mb-8">
+            R&D Manager @ ETIES | <span class="text-white">DevOps Enthusiast</span>
+        </h2>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="glass px-6 py-4 flex items-center gap-3">
+                <i class="fas fa-microchip text-blue-500 text-xl"></i>
+                <div class="text-left">
+                    <p class="text-[10px] uppercase text-slate-500 font-bold tracking-tighter">Current Role</p>
+                    <p class="text-sm font-bold">R&D Manager</p>
+                </div>
+            </div>
+            <div class="glass px-6 py-4 flex items-center gap-3">
+                <i class="fas fa-server text-purple-500 text-xl"></i>
+                <div class="text-left">
+                    <p class="text-[10px] uppercase text-slate-500 font-bold tracking-tighter">Focus</p>
+                    <p class="text-sm font-bold">DevOps & Scalability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h3 class="text-blue-500 font-bold uppercase tracking-widest mb-2 text-sm">Strategic Vision</h3>
+                <h2 class="text-4xl md:text-5xl font-black mb-8">Bridging Innovation <br>& Infrastructure.</h2>
+                <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                    I manage the complete product lifecycle for enterprise MES and IoT platforms. My focus is shifting heavily towards <span class="text-white">DevOps and Cloud Orchestration</span>, ensuring that complex R&D projects aren't just innovative, but resilient and infinitely scalable.
+                </p>
+                
+				<div class="p-6 border border-yellow-500/20 bg-yellow-500/5 rounded-3xl flex gap-6 items-center">
+					<div class="text-4xl text-yellow-500"><i class="fas fa-trophy"></i></div>
+					<div>
+						<h4 class="font-bold text-lg italic">100100 Hackathon Challenge</h4>
+						<p class="text-sm text-yellow-500/80 uppercase font-bold tracking-widest">Participant</p>
+					</div>
+				</div>
+
+            </div>
+            
+            <div class="glass p-8 relative">
+                <h4 class="text-center mb-4 font-bold text-slate-500 uppercase text-xs tracking-[0.3em]">Technical Fingerprint</h4>
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="devops" class="py-24 bg-blue-600 rounded-[50px] mx-4 my-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10 text-[20rem] font-black -mr-20 -mt-20 leading-none">BUILD</div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-5xl md:text-7xl font-black mb-12 italic">THE DEVOPS ENGINE</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-left border border-white/10 hover:bg-white/20 transition">
+                    <i class="fab fa-docker text-4xl mb-4"></i>
+                    <h5 class="font-black text-xl mb-2">Docker</h5>
+                    <p class="text-sm text-blue-100">Standardizing environments across R&D labs and production.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-left border border-white/10 hover:bg-white/20 transition">
+                    <i class="fas fa-cubes text-4xl mb-4"></i>
+                    <h5 class="font-black text-xl mb-2">Kubernetes</h5>
+                    <p class="text-sm text-blue-100">Orchestrating resilient microservices for Industry 4.0.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-left border border-white/10 hover:bg-white/20 transition">
+                    <i class="fas fa-code-branch text-4xl mb-4"></i>
+                    <h5 class="font-black text-xl mb-2">CI/CD</h5>
+                    <p class="text-sm text-blue-100">Automated Bitbucket pipelines for zero-downtime releases.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl text-left border border-white/10 hover:bg-white/20 transition">
+                    <i class="fas fa-shield-alt text-4xl mb-4"></i>
+                    <h5 class="font-black text-xl mb-2">SecOps</h5>
+                    <p class="text-sm text-blue-100">AWS Security Hub and Watchguard network hardening.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 max-w-5xl mx-auto px-6">
+        <h2 class="text-center text-4xl font-black mb-16 italic uppercase tracking-tighter">Strategic Journey</h2>
+        <div class="space-y-16">
+            <div class="flex flex-col md:flex-row gap-8 reveal">
+                <div class="md:w-1/3">
+                    <h4 class="text-blue-500 font-black text-xl tracking-tighter">2023 — Present</h4>
+                    <p class="text-slate-500 font-bold uppercase text-xs tracking-widest mt-1">ETIES Srl</p>
+                </div>
+                <div class="md:w-2/3 glass p-8 border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-bold mb-4">R&D Manager</h3>
+                    <p class="text-slate-400 mb-6">Orchestrating development of cloud-native MES/CRM platforms. Leading the integration of <span class="text-white font-bold">AI Agents</span> and real-time industrial monitoring.</p>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded text-[10px] font-bold">LARAVEL EXPERT</span>
+                        <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded text-[10px] font-bold">K8S</span>
+                        <span class="bg-blue-500/10 text-blue-400 px-3 py-1 rounded text-[10px] font-bold">TIMESCALE DB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8 reveal">
+                <div class="md:w-1/3">
+                    <h4 class="text-slate-500 font-black text-xl tracking-tighter">2018 — 2021</h4>
+                    <p class="text-slate-500 font-bold uppercase text-xs tracking-widest mt-1">NEXUS SRL</p>
+                </div>
+                <div class="md:w-2/3 glass p-8 border-l-4 border-slate-700">
+                    <h3 class="text-2xl font-bold mb-4">Software Developer</h3>
+                    <p class="text-slate-400 mb-6">Deep dive into PLC (Siemens, Omron) and SCADA systems. Developed high-performance services for machine-to-database data exchange.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs" class="py-24 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <h2 class="text-4xl font-black italic">CERTIFICATIONS</h2>
+                <p class="text-slate-500 font-bold hidden md:block uppercase text-xs">Continuous Learning Path</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass p-6 group hover:border-blue-500 transition duration-500">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-certificate text-blue-500"></i>
+                    </div>
+                    <p class="text-xs font-bold text-blue-400 mb-1">JUN 2025</p>
+                    <h4 class="font-bold text-lg mb-2">Introduction to TiDB</h4>
+                    <p class="text-sm text-slate-500">Expertise in Horizontal Scaling and distributed databases.</p>
+                </div>
+                <div class="glass p-6 group hover:border-blue-500 transition duration-500">
+                    <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-robot text-orange-500"></i>
+                    </div>
+                    <p class="text-xs font-bold text-orange-400 mb-1">MAY 2025</p>
+                    <h4 class="font-bold text-lg mb-2">AI Agents Fundamentals</h4>
+                    <p class="text-sm text-slate-500">Hugging Face - Specialized in LLM workflows.</p>
+                </div>
+                <div class="glass p-6 group hover:border-blue-500 transition duration-500">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-docker text-blue-500"></i>
+                    </div>
+                    <p class="text-xs font-bold text-blue-400 mb-1">NOV 2024</p>
+                    <h4 class="font-bold text-lg mb-2">Docker & Kubernetes</h4>
+                    <p class="text-sm text-slate-500">The Practical Guide (Udemy Edition).</p>
+                </div>
+                <div class="glass p-6 group hover:border-blue-500 transition duration-500">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-chart-pie text-purple-500"></i>
+                    </div>
+                    <p class="text-xs font-bold text-purple-400 mb-1">JAN 2024</p>
+                    <h4 class="font-bold text-lg mb-2">Power BI Data Analyst</h4>
+                    <p class="text-sm text-slate-500">Advanced Business Intelligence and Data Modeling.</p>
+                </div>
+                <div class="glass p-6 group hover:border-blue-500 transition duration-500">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fab fa-aws text-cyan-500"></i>
+                    </div>
+                    <p class="text-xs font-bold text-cyan-400 mb-1">JAN 2022</p>
+                    <h4 class="font-bold text-lg mb-2">AWS Security Hub</h4>
+                    <p class="text-sm text-slate-500">Securing cloud infrastructures at scale.</p>
+                </div>
+                <div class="glass p-6 group hover:border-blue-500 transition duration-500">
+                    <div class="w-12 h-12 bg-slate-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+                        <i class="fas fa-network-wired text-slate-400"></i>
+                    </div>
+                    <p class="text-xs font-bold text-slate-500 mb-1">NOV 2016</p>
+                    <h4 class="font-bold text-lg mb-2">Cisco CCNA</h4>
+                    <p class="text-sm text-slate-500">Core Networking foundations and Routing/Switching.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center px-6">
+        <h2 class="text-5xl md:text-8xl font-black mb-12 tracking-tighter opacity-20">CONTACT ME</h2>
+        <div class="flex flex-col gap-6 items-center">
+            <a href="mailto:matteocracco97@gmail.com" class="text-2xl md:text-4xl font-bold hover:text-blue-500 transition underline underline-offset-8">matteocracco97@gmail.com</a>
+            <p class="text-xl text-slate-500">+39 334 299 3253</p>
+            <div class="flex gap-8 mt-10">
+                <a href="https://linkedin.com/in/matteocracco97" class="text-3xl hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-3xl hover:text-white transition"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <p class="mt-24 text-[10px] uppercase tracking-[0.5em] text-slate-600">© 2025 Matteo Cracco | Vicenza, Italy</p>
+    </footer>
+    
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
