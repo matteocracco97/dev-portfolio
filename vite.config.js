@@ -4,6 +4,7 @@ export default defineConfig({
   root: './src',
   build: {
     outDir: '../dist',
+    publicDir: 'public', 
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
