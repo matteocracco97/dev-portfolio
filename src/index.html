@@ -41,7 +41,7 @@
                 <a href="#experience" class="hover:text-blue-400 transition">Journey</a>
                 <a href="#certs" class="hover:text-blue-400 transition">Certs</a>
             </div>
-            <a href="mailto:matteocracco97@gmail.com" class="neo-btn bg-blue-600 px-6 py-2 rounded-xl text-xs font-bold uppercase">Contact</a>
+            <a href="#" class="neo-btn bg-blue-600 px-6 py-2 rounded-xl text-xs font-bold uppercase email-link" data-email="moc.liamg@79occarcoettam">Contact</a>
         </div>
     </nav>
 
@@ -221,7 +221,7 @@
     <footer class="py-20 text-center px-6">
         <h2 class="text-5xl md:text-8xl font-black mb-12 tracking-tighter opacity-20">CONTACT ME</h2>
         <div class="flex flex-col gap-6 items-center">
-            <a href="mailto:matteocracco97@gmail.com" class="text-2xl md:text-4xl font-bold hover:text-blue-500 transition underline underline-offset-8">matteocracco97@gmail.com</a>
+            <a href="#" class="text-2xl md:text-4xl font-bold hover:text-blue-500 transition underline underline-offset-8 email-link" data-email="moc.liamg@79occarcoettam">[email protected]</a>
             <p class="text-xl text-slate-500">+39 334 299 3253</p>
             <div class="flex gap-8 mt-10">
                 <a href="https://linkedin.com/in/matteocracco97" class="text-3xl hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
@@ -231,6 +231,21 @@
         <p class="mt-24 text-[10px] uppercase tracking-[0.5em] text-slate-600">© 2025 Matteo Cracco | Vicenza, Italy</p>
     </footer>
     
-    <script type="module" src="./main.js"></script>
+        <script type="module" src="./main.js"></script>
+
+        <script>
+            (function(){
+                function decodeEmail(s){ return s.split('').reverse().join(''); }
+                document.querySelectorAll('.email-link').forEach(function(el){
+                    var rev = el.getAttribute('data-email');
+                    if(!rev) return;
+                    var email = decodeEmail(rev);
+                    el.setAttribute('href','mailto:'+email);
+                    if(el.textContent.trim().toLowerCase().indexOf('contact')===-1){
+                        el.textContent = email;
+                    }
+                });
+            })();
+        </script>
 </body>
 </html>
