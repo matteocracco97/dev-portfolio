@@ -37,6 +37,7 @@
             <div class="text-2xl font-black tracking-tighter">MC<span class="text-blue-500">.</span></div>
             <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-[0.2em]">
                 <a href="#about" class="hover:text-blue-400 transition">Strategy</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
                 <a href="#devops" class="hover:text-blue-400 transition">DevOps</a>
                 <a href="#experience" class="hover:text-blue-400 transition">Journey</a>
                 <a href="#certs" class="hover:text-blue-400 transition">Certs</a>
@@ -79,20 +80,50 @@
                 <p class="text-slate-400 text-lg leading-relaxed mb-8">
                     I manage the complete product lifecycle for enterprise MES and IoT platforms. My focus is shifting heavily towards <span class="text-white">DevOps and Cloud Orchestration</span>, ensuring that complex R&D projects aren't just innovative, but resilient and infinitely scalable.
                 </p>
-                
-				<div class="p-6 border border-yellow-500/20 bg-yellow-500/5 rounded-3xl flex gap-6 items-center">
-					<div class="text-4xl text-yellow-500"><i class="fas fa-trophy"></i></div>
-					<div>
-						<h4 class="font-bold text-lg italic">100100 Hackathon Challenge</h4>
-						<p class="text-sm text-yellow-500/80 uppercase font-bold tracking-widest">Participant</p>
-					</div>
-				</div>
-
             </div>
-            
             <div class="glass p-8 relative">
                 <h4 class="text-center mb-4 font-bold text-slate-500 uppercase text-xs tracking-[0.3em]">Technical Fingerprint</h4>
                 <canvas id="skillsChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 max-w-7xl mx-auto px-6">
+        <h2 class="text-center text-4xl font-black mb-16 italic uppercase tracking-tighter">Selected Projects</h2>
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div class="glass p-8 border-l-4 border-blue-500">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="/images/polizia-padova-logo.png" alt="Polizia Locale di Padova logo" class="h-14 w-14 object-contain rounded-3xl bg-slate-950/50 p-2" />
+                    <div>
+                        <p class="text-xs uppercase tracking-[0.3em] text-slate-500 mb-2">On-premise command & control</p>
+                        <h3 class="text-2xl font-bold">ETIES Operational Service Management <span class="text-blue-400">for Polizia Locale di Padova</span></h3>
+                    </div>
+                </div>
+                <p class="text-slate-400 mb-6">Built for <span class="text-blue-400">Polizia Locale di Padova</span>, this on-premise web platform manages operative service shifts and reporting with strict validation and hierarchical approval control.</p>
+                <ul class="space-y-3 text-sm text-slate-300 mb-6">
+                    <li>On-premise deployment across Linux server clusters, not public cloud</li>
+                    <li>Laravel backend powering modular service logic and secure role workflows</li>
+                    <li>Kubernetes orchestration for container resilience and environment separation</li>
+                    <li>Granular access controls and immutable approval states for operational reliability</li>
+                </ul>
+                <div class="grid gap-4 sm:grid-cols-2 text-sm">
+                    <div class="bg-slate-900/50 p-4 rounded-3xl">
+                        <p class="uppercase text-[10px] text-slate-500 tracking-[0.25em] mb-2">Backend</p>
+                        <p>Laravel service-oriented architecture for extensible business logic.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-3xl">
+                        <p class="uppercase text-[10px] text-slate-500 tracking-[0.25em] mb-2">Deployment</p>
+                        <p>Docker + Kubernetes on-premise clusters with isolated test and production lanes.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-3xl">
+                        <p class="uppercase text-[10px] text-slate-500 tracking-[0.25em] mb-2">Control</p>
+                        <p>Traceable operations, validated reports, role-based evaluations.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-4 rounded-3xl">
+                        <p class="uppercase text-[10px] text-slate-500 tracking-[0.25em] mb-2">Stability</p>
+                        <p>On-premise resilience with container optimization and PHP runtime tuning.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -228,7 +259,7 @@
                 <a href="https://github.com/matteocracco97" class="text-3xl hover:text-white transition"><i class="fab fa-github"></i></a>
             </div>
         </div>
-        <p class="mt-24 text-[10px] uppercase tracking-[0.5em] text-slate-600">© 2025 Matteo Cracco | Vicenza, Italy</p>
+        <p class="mt-24 text-[10px] uppercase tracking-[0.5em] text-slate-600">© 2026 Matteo Cracco | Vicenza, Italy</p>
     </footer>
     
         <script type="module" src="./main.js"></script>
