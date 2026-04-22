@@ -5,12 +5,13 @@
   "main": "src/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cross-env VITE_CJS_TRACE=true vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "postcss-font-magician": "^4.0.0",
